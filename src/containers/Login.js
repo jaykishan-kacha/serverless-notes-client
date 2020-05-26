@@ -26,7 +26,7 @@ export default function Login() {
 
     try {
       await Auth.signIn(fields.email, fields.password);
-      userHasAuthenticated(true);]
+      userHasAuthenticated(true);
     } catch (e) {
       onError(e);
       setIsLoading(false);
